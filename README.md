@@ -12,4 +12,6 @@
       (2) 自己app gradle加入：
       
          compile 'com.github.yeyuqingchen:yc_pick:-SNAPSHOT'
-       
+	 
+	 
+       取消按钮  全为-1
