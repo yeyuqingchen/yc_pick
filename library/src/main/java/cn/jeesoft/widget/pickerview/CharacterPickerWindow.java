@@ -112,6 +112,10 @@ public class CharacterPickerWindow extends PopupWindow implements View.OnClickLi
                 int[] optionsCurrentItems = pickerView.getCurrentItems();
                 optionsSelectListener.onOptionChanged(optionsCurrentItems[0], optionsCurrentItems[1], optionsCurrentItems[2]);
             }
+        }else {
+            if (optionsSelectListener != null) {
+                optionsSelectListener.onOptionChanged(-1, -1, -1);
+            }
         }
         dismiss();
     }

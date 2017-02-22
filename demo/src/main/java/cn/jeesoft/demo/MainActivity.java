@@ -1,5 +1,6 @@
 package cn.jeesoft.demo;
 
+import android.graphics.Color;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
@@ -20,9 +21,9 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
 
         // 用View的方式实现
-        showView();
+//        showView();
         // 用PopupWindow的方式实现
-        //showWindow();
+        showWindow();
 
     }
 
@@ -51,6 +52,7 @@ public class MainActivity extends AppCompatActivity {
 
     private void showWindow() {
         Button button = new Button(this);
+        button.setBackgroundColor(Color.parseColor("#00000000"));
         button.setText("点击弹窗");
         setContentView(button);
 
