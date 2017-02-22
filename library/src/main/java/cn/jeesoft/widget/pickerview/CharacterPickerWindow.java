@@ -27,7 +27,7 @@ public class CharacterPickerWindow extends PopupWindow implements View.OnClickLi
         this.setWidth(ViewGroup.LayoutParams.MATCH_PARENT);
         this.setHeight(ViewGroup.LayoutParams.WRAP_CONTENT);
 //        this.setBackgroundDrawable(new BitmapDrawable());// 这样设置才能点击屏幕外dismiss窗口
-        this.setBackgroundDrawable(new ColorDrawable(Color.parseColor("#60000000")));
+        this.setBackgroundDrawable(new ColorDrawable(Color.parseColor("#80000000")));
 
         this.setOutsideTouchable(true);
         this.setAnimationStyle(R.style.j_timepopwindow_anim_style);
